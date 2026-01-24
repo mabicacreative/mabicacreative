@@ -1,60 +1,80 @@
-# 🌿 MABICA (Mari Bikin Cerita)
+# 🌿 MABICA (Mari Bikin Cerita) — Company Profile Website
 
-> Dari Ide ke Cerita, Bersama MABICA  
-> Status: Legacy Reborn — Solo Development by Kemi
+> From Idea to Story — A Creative Storytelling Collective
 
+## 📖 About
 
+This is the official company profile website for MABICA (Mari Bikin Cerita), a creative storytelling collective that transforms raw ideas into complete artistic works. MABICA combines various creative disciplines into one output: Multimedia Novels.
 
-## 📖 Tentang MABICA
+## 🎨 Design Philosophy
 
-MABICA adalah **kolektif produksi cerita** yang berfokus pada pengembangan **novel multimedia**—karya naratif yang memadukan tulisan, visual, audio, dan sistem digital dalam satu ekosistem.
+- **Style:** Retro-minimalist, fun, cozy, and clean
+- **Color Palette:** Natural & fresh colors with a focus on greens and soft backgrounds
+  - Morning Mist (Background): #F8FAF7
+  - Sage Leaf (Primary): #8EB897
+  - Deep Moss (Text): #2C3E32
+  - Lime Shoot (Accent): #CEDEBD
+- **Typography:** Playfair Display for headings, Inter for body text
 
-Cerita di MABICA tidak hanya ditulis, tetapi **dibangun** sebagai dunia yang utuh dan berumur panjang.
+## 🛠️ Tech Stack
 
+- Next.js 14 (App Router)
+- React 18
+- TypeScript
+- Tailwind CSS
+- Lucide React Icons
 
+## 🚀 Getting Started
 
-## 🧭 Fokus Proyek
+1. Install dependencies:
+```bash
+npm install
+```
 
-Repository ini merupakan bagian dari ekosistem MABICA yang mencakup:
-- pengembangan platform & sistem
-- arsip proyek cerita
-- dokumentasi proses kreatif
-- eksperimen teknologi untuk storytelling
+2. Run the development server:
+```bash
+npm run dev
+```
 
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+## 📁 Project Structure
 
-## 🪵 Filosofi: The Artifact
+```
+src/
+├── app/                 # Next.js App Router pages
+│   ├── layout.tsx       # Root layout
+│   ├── page.tsx         # Home page
+│   └── globals.css      # Global styles
+├── components/          # React components
+│   ├── ui/              # Reusable UI components
+│   └── MabicaLogo.tsx   # Custom logo component
+├── lib/                 # Utilities
+│   └── utils.ts         # Utility functions
+```
 
-Setiap karya diperlakukan sebagai **artefak digital**—hasil dari proses, konsistensi, dan dedikasi.  
-Kami berjalan pelan, membangun sesuatu yang bisa bertahan lama.
+## 🌟 Features
 
+- Responsive design for all devices
+- Interactive navigation tabs
+- Team member showcase
+- Product library display
+- Philosophy section with brand guidelines
+- Modern UI with smooth transitions
 
+## 🎯 Vision & Mission
 
-## 📚 Karya Utama
+**Vision:** To become a space for young imagination exploration that unites literacy, visual arts, and digital technology.
 
-- **Occult of The Catalyst (OOTC)** — Novel Multimedia (ongoing)
-- Proyek lain dalam tahap pengembangan
+**Mission:**
+- Producing high-quality novels with cinematic visual and audio support
+- Building "Digital Artefacts" as proof of creators' dedication
+- Connecting cross-field works in one production harmony
 
+## 👥 The Collective
 
-
-## 🛠️ Ekosistem
-
-- 🌐 Website: https://mabica.vercel.app  
-- 💬 Discord: https://dsc.gg/mabica  
-- 🎧 Audio & Music: Spotify  
-- 📱 Social: Instagram, TikTok, YouTube  
-
-
-
-## 🚧 Status Pengembangan
-
-MABICA saat ini dikembangkan dan dipelihara secara mandiri.  
-Repository ini bersifat aktif dan terus berevolusi seiring perjalanan proyek.
-
-
-
-## 🌿 Penutup
-
-MABICA bukan proyek cepat.  
-Ini adalah perjalanan membangun cerita sebagai warisan.
-
+Currently maintained by Kemi as a solo development effort, continuing the legacy of the original team:
+- Rayzi: Project Manager
+- Kemi: Tech Lead & Developer
+- Karin: Creative Lead
+- Buybuy: Management
