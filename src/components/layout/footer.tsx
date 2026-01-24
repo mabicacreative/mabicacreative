@@ -47,8 +47,14 @@ export function Footer() {
                   <Link
                     key={social.name}
                     href={social.href}
-                    className="transition-colors text-lime-shoot hover:text-sage-leaf"
+                    className="transition-colors text-lime-shoot hover:text-sage-leaf flex items-center gap-2"
                   >
+                    {social.name === 'Discord' && <span>💬</span>}
+                    {social.name === 'TikTok' && <span>🎵</span>}
+                    {social.name === 'YouTube' && <span>📺</span>}
+                    {social.name === 'Instagram' && <span>📷</span>}
+                    {social.name === 'GitHub' && <span>💻</span>}
+                    {social.name === 'Spotify' && <span>🎧</span>}
                     {social.name}
                   </Link>
                 ))}

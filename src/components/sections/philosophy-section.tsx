@@ -25,13 +25,7 @@ export function PhilosophySection() {
                   <div className="flex flex-col items-center text-center">
                     <div className="relative mb-8">
                       <div className="flex justify-center items-center w-24 h-24 text-2xl font-bold rounded-full bg-sage-leaf text-morning-mist">
-                        <Image
-                          src="/images/logo/mabicalogo-rounded.png"
-                          alt="MABICA Logo"
-                          fill
-                          className="object-contain"
-                          sizes="(max-width: 768px) 40px, 64px"
-                        />
+                        M
                       </div>
                       <div className="flex absolute -top-2 -right-2 justify-center items-center w-8 h-8 text-xs rounded-full border-2 bg-lime-shoot border-morning-mist text-deep-moss">
                         +
@@ -42,7 +36,7 @@ export function PhilosophySection() {
                       <div className="p-4 rounded-lg border shadow-sm bg-morning-mist border-sage-leaf/30">
                         <div className="mb-2 font-bold text-sage-leaf">IDE</div>
                         <div className="flex justify-center items-center mx-auto w-12 h-12 rounded-full bg-sage-leaf/20">
-                          💡
+                          •
                         </div>
                       </div>
 
@@ -56,7 +50,7 @@ export function PhilosophySection() {
                           CERITA
                         </div>
                         <div className="flex justify-center items-center mx-auto w-12 h-12 rounded-full bg-sage-leaf/20">
-                          ✍️
+                          •
                         </div>
                       </div>
 
@@ -70,7 +64,7 @@ export function PhilosophySection() {
                           KARYA
                         </div>
                         <div className="flex justify-center items-center mx-auto w-12 h-12 rounded-full bg-sage-leaf/20">
-                          🎨
+                          •
                         </div>
                       </div>
 
@@ -84,7 +78,7 @@ export function PhilosophySection() {
                           DAMPAK
                         </div>
                         <div className="flex justify-center items-center mx-auto w-12 h-12 rounded-full bg-sage-leaf/20">
-                          🌱
+                          •
                         </div>
                       </div>
                     </div>
