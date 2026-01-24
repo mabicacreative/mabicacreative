@@ -18,21 +18,26 @@ This is the official company profile website for MABICA (Mari Bikin Cerita), a c
 
 ## 🛠️ Tech Stack
 
-- Next.js 14 (App Router)
-- React 18
+- Next.js 16 (App Router)
+- React 19
 - TypeScript
 - Tailwind CSS
 - Lucide React Icons
+- shadcn/ui components
 
 ## 🚀 Getting Started
 
 1. Install dependencies:
 ```bash
+bun install
+# or
 npm install
 ```
 
 2. Run the development server:
 ```bash
+bun dev
+# or
 npm run dev
 ```
 
@@ -48,7 +53,11 @@ src/
 │   └── globals.css      # Global styles
 ├── components/          # React components
 │   ├── ui/              # Reusable UI components
-│   └── MabicaLogo.tsx   # Custom logo component
+│   ├── mabica-logo.tsx  # Custom logo component
+│   ├── about-section.tsx # About section component
+│   ├── team-section.tsx # Team section component
+│   ├── products-section.tsx # Products section component
+│   └── philosophy-section.tsx # Philosophy section component
 ├── lib/                 # Utilities
 │   └── utils.ts         # Utility functions
 ```
@@ -56,11 +65,12 @@ src/
 ## 🌟 Features
 
 - Responsive design for all devices
-- Interactive navigation tabs
+- Interactive navigation
 - Team member showcase
 - Product library display
 - Philosophy section with brand guidelines
 - Modern UI with smooth transitions
+- Accessibility-focused design
 
 ## 🎯 Vision & Mission
 

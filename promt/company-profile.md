@@ -1,16 +1,12 @@
-# 🌿 MABICA (Mari Bikin Cerita) — Official Profile
+# 🌿 MABICA — From Idea to Story
 
-> Tagline: "From Idea to Story"
->
->
 > **Status:** Legacy Reborn (Phase: Solo Development by Kemi)
->
 
 ---
 
 ## 📖 Tentang MABICA
 
-MABICA bukan sekadar platform baca. Kami adalah **Kolektif Produksi Cerita** yang menggabungkan berbagai disiplin kreatif dalam satu output: **Novel Multimedia**.
+MABICA (Mari Bikin Cerita) bukan sekadar platform baca. Kami adalah **Kolektif Produksi Cerita** yang menggabungkan berbagai disiplin kreatif dalam satu output: **Novel Multimedia**.
 
 Di sini, sebuah cerita tidak hanya ditulis, tapi dibangun secara kolektif oleh penulis, ilustrator, pengisi suara, musisi, hingga developer. MABICA adalah ekosistem di mana ide-ide mentah bertransformasi menjadi karya seni yang utuh dan abadi.
 
