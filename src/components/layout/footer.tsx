@@ -1,120 +1,82 @@
-"use client";
-
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { MabicaLogo } from "../mabica/mabica-logo";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
-  const quickLinks = [
-    { name: "About", href: "/about" as const },
-    { name: "Services", href: "/services" as const },
-    { name: "Projects", href: "/projects" as const },
-    { name: "Ecosystem", href: "/ecosystem" as const },
-    { name: "Contact", href: "/contact" as const },
+  const socialLinks = [
+    { href: "https://instagram.com/mabicacreative", label: "Instagram" },
+    { href: "https://tiktok.com/@mabicacreative", label: "TikTok" },
+    { href: "https://x.com/mabicacreative", label: "Twitter/X" },
+    { href: "https://github.com/mabicacreative", label: "GitHub" },
   ];
 
-  const socialLinks = [
-    { name: "Discord", href: "#" as const },
-    { name: "TikTok", href: "#" as const },
-    { name: "YouTube", href: "#" as const },
-    { name: "Instagram", href: "#" as const },
-    { name: "GitHub", href: "#" as const },
-    { name: "Spotify", href: "#" as const },
+  const ecosystemLinks = [
+    { href: "https://dsc.gg/mabica", label: "Discord" },
+    { href: "https://mabica.vercel.app", label: "Website" },
   ];
 
   return (
-    <footer className="py-12 px-4 md:px-8 bg-deep-moss text-morning-mist">
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
-          <div className="col-span-1 md:col-span-2">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <MabicaLogo size="large" className="mb-4" />
-              <p className="mb-4 max-w-md text-lime-shoot">
-                MABICA (Mari Bikin Cerita) is a creative storytelling collective
-                that transforms raw ideas into complete artistic works. We
-                combine various creative disciplines into one output: Multimedia
-                Novels.
-              </p>
-              <div className="flex flex-row flex-wrap gap-4">
-                {socialLinks.map((social) => (
-                  <Link
-                    key={social.name}
-                    href={social.href}
-                    className="transition-colors text-lime-shoot hover:text-sage-leaf flex items-center gap-2"
-                  >
-                    {social.name === 'Discord' && <span>💬</span>}
-                    {social.name === 'TikTok' && <span>🎵</span>}
-                    {social.name === 'YouTube' && <span>📺</span>}
-                    {social.name === 'Instagram' && <span>📷</span>}
-                    {social.name === 'GitHub' && <span>💻</span>}
-                    {social.name === 'Spotify' && <span>🎧</span>}
-                    {social.name}
-                  </Link>
-                ))}
-              </div>
-            </motion.div>
+    <footer className="bg-deep-moss text-morning-mist py-12 mt-auto">
+      <div className="container mx-auto px-6">
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
+          {/* Brand */}
+          <div>
+            <h3 className="font-playfair text-2xl font-bold mb-4">MABICA</h3>
+            <p className="text-morning-mist text-opacity-70 text-sm leading-relaxed">
+              Mari Bikin Cerita - A Creative Storytelling Collective
+              transforming raw ideas into complete artistic works.
+            </p>
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <h3 className="mb-4 text-lg font-bold text-sage-leaf font-playfair">
-              Quick Links
-            </h3>
+          {/* Ecosystem */}
+          <div>
+            <h4 className="font-playfair text-lg font-semibold mb-4">
+              Ecosystem
+            </h4>
             <ul className="space-y-2">
-              {quickLinks.map((link) => (
-                <li key={link.name}>
+              {ecosystemLinks.map((link) => (
+                <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="block py-1 transition-colors text-lime-shoot hover:text-sage-leaf"
+                    className="text-morning-mist text-opacity-70 hover:text-opacity-100 hover:text-sage-leaf transition-colors duration-200 text-sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    {link.name}
+                    {link.label}
                   </Link>
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
-            <h3 className="mb-4 text-lg font-bold text-sage-leaf font-playfair">
-              Contact
-            </h3>
-            <address className="not-italic text-lime-shoot">
-              <p className="text-lime-shoot">Indonesia</p>
-              <p className="mt-2 transition-colors text-lime-shoot hover:text-sage-leaf">
-                mabica.community@gmail.com
-              </p>
-            </address>
-          </motion.div>
+          {/* Social */}
+          <div>
+            <h4 className="font-playfair text-lg font-semibold mb-4">
+              Connect
+            </h4>
+            <ul className="space-y-2">
+              {socialLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-morning-mist text-opacity-70 hover:text-opacity-100 hover:text-sage-leaf transition-colors duration-200 text-sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
-        <motion.div
-          className="pt-8 mt-8 text-center border-t border-sage-leaf/20"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-        >
-          <p className="transition-colors text-lime-shoot hover:text-sage-leaf">
-            &copy; {currentYear} MABICA. All rights reserved. From Idea to
-            Story.
+        {/* Bottom Bar */}
+        <div className="border-t border-morning-mist border-opacity-20 pt-8 text-center">
+          <p className="text-morning-mist text-opacity-50 text-sm">
+            &copy; {currentYear} MABICA. From Idea to Story.
           </p>
-        </motion.div>
+        </div>
       </div>
     </footer>
   );
