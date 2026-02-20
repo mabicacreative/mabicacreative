@@ -1,4 +1,5 @@
 # QWEN.md — Project Context
+--resume d8ef67b9-dbcf-4b78-a02c-94d631f0f5bf
 
 ## Project Overview
 
